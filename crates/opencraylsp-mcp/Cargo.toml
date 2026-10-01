@@ -1,0 +1,49 @@
+[package]
+name = "opencraylsp-mcp"
+description = "MCP stdio server that exposes the lsp_* tools by talking to the opencraylspd daemon."
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+authors.workspace      = true
+readme.workspace       = true
+keywords.workspace     = true
+categories.workspace   = true
+
+[[bin]]
+name = "opencraylsp-mcp"
+path = "src/main.rs"
+
+[features]
+default = ["embedded"]
+# In-process mode: run the pool inside `opencraylsp-mcp` instead of talking to a
+# daemon. On by default; `--embedded` is still needed to select it at runtime.
+embedded = []
+# Development-only: compiles the in-process FakeHost and the hidden
+# `--fake-host` flag into the binary. Never part of a release build.
+test-fake-host = []
+
+[dependencies]
+opencraylsp-proto  = { workspace = true }
+opencraylsp-client = { workspace = true }
+opencraylsp-core   = { workspace = true }
+opencraylsp-tools  = { workspace = true }
+async-trait        = { workspace = true }
+clap               = { workspace = true }
+serde              = { workspace = true }
+serde_json         = { workspace = true }
+# `io-std` (on top of the workspace set) is what provides
+# `tokio::io::stdin/stdout`, the only way to speak stdio asynchronously.
+tokio              = { workspace = true, features = ["io-std"] }
+tokio-util         = { workspace = true }
+tracing            = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[dev-dependencies]
+tempfile         = { workspace = true }
+opencraylsp-core = { workspace = true, features = ["testing"] }
+
+[lints]
+workspace = true

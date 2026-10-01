@@ -1,0 +1,44 @@
+[package]
+name = "opencraylsp-core"
+description = "Language-server client machinery: transport, instances, document sync, pooling and the backend contract."
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+authors.workspace      = true
+readme.workspace       = true
+keywords.workspace     = true
+categories.workspace   = true
+
+[dependencies]
+opencraylsp-proto = { workspace = true }
+async-trait       = { workspace = true }
+lsp-types         = { workspace = true }
+serde             = { workspace = true }
+serde_json        = { workspace = true }
+thiserror         = { workspace = true }
+tokio             = { workspace = true }
+tokio-util        = { workspace = true }
+toml              = { workspace = true }
+tracing           = { workspace = true }
+url               = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[features]
+# Exposes `mock::MockBackend` to other crates' tests.
+testing = []
+# Builds the scriptable fake language server used by integration tests. Kept
+# out of release builds by `required-features`.
+test-fake-lsp = []
+
+[[bin]]
+name = "fake-lsp-server"
+path = "src/bin/fake_lsp_server.rs"
+required-features = ["test-fake-lsp"]
+
+[lints]
+workspace = true

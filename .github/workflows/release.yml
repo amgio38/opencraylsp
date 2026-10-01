@@ -1,0 +1,137 @@
+name: release
+
+# Pushing a tag such as v0.20260929.1 builds the two programs as static musl
+# binaries for Linux x86-64 and Linux aarch64, and attaches them (plus a
+# checksum each) to the matching GitHub Release. The only credential used is
+# the built-in GITHUB_TOKEN.
+#
+# Each architecture builds on a runner of its own architecture, so the binary
+# that gets published is also run once (`--version`) before it is uploaded.
+# Nothing is published unless both builds succeed: the release is created by a
+# separate job that needs the build job, so a failure on one architecture does
+# not leave a release with only the other one.
+#
+# Each archive is the two programs plus the licence files under
+# share/doc/opencraylsp, so installing from a release asset leaves a prefix that
+# carries its own licence. See scripts/doc-files.sh for the set.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    name: static binaries (${{ matrix.target }})
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - target: x86_64-unknown-linux-musl
+            runner: ubuntu-latest
+          - target: aarch64-unknown-linux-musl
+            runner: ubuntu-24.04-arm
+    env:
+      TARGET: ${{ matrix.target }}
+      ASSET: opencraylsp-${{ matrix.target }}.tar.gz
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust with the musl target
+        uses: dtolnay/rust-toolchain@1.95.0
+        with:
+          targets: ${{ matrix.target }}
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.target }}
+
+      - name: Build static binaries
+        run: cargo build --release --locked --target "$TARGET" -p opencraylspd -p opencraylsp-mcp
+
+      - name: Package and checksum
+        run: |
+          set -eu
+          mkdir -p dist
+          cp "target/$TARGET/release/opencraylspd" dist/opencraylspd
+          cp "target/$TARGET/release/opencraylsp-mcp" dist/opencraylsp-mcp
+          file dist/opencraylspd dist/opencraylsp-mcp
+          # A release binary must not depend on the libc of the machine that
+          # runs it; that is the point of the musl target.
+          for p in opencraylspd opencraylsp-mcp; do
+            file "dist/$p" | grep -Eq 'statically linked|static-pie linked' \
+              || { echo "::error::dist/$p is not statically linked"; exit 1; }
+            # The runner has this architecture, so the binary can be run once
+            # before anybody downloads it.
+            "dist/$p" --version
+          done
+          # The licence files ride along in the archive so that a copy of the
+          # binary can answer for itself: the licences of what is bundled in it
+          # have to travel with every redistribution. The set comes from
+          # scripts/doc-files.sh, the same list `make install` and the license
+          # check use, so an archive cannot ship a different set from the one
+          # the repository declares. install.sh extracts exactly
+          # $OPENCRAYLSP_DOC_SUBDIR from the archive and refuses anything else in it.
+          . scripts/doc-files.sh
+          for f in $OPENCRAYLSP_DOC_FILES; do
+            test -f "$f" || { echo "::error::$f is listed in scripts/doc-files.sh but not in this checkout"; exit 1; }
+            install -D -m 0644 "$f" "dist/$OPENCRAYLSP_DOC_SUBDIR/$f"
+          done
+          tar -czf "$ASSET" -C dist opencraylspd opencraylsp-mcp "$OPENCRAYLSP_DOC_SUBDIR"
+          echo "archive members:"
+          tar -tzf "$ASSET"
+          sha256sum "$ASSET" > "$ASSET.sha256"
+          cat "$ASSET.sha256"
+
+      - name: Keep the archive for the publish job
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.target }}
+          path: |
+            ${{ env.ASSET }}
+            ${{ env.ASSET }}.sha256
+          if-no-files-found: error
+          retention-days: 7
+
+  publish:
+    name: publish the release
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - name: Fetch both archives
+        uses: actions/download-artifact@v4
+        with:
+          pattern: release-*
+          merge-multiple: true
+          path: assets
+
+      - name: Publish the release
+        run: |
+          set -eu
+          ls -l assets
+          # Both architectures, or nothing: a release that quietly lacks one
+          # would send that architecture's users to a slow source build.
+          for t in x86_64-unknown-linux-musl aarch64-unknown-linux-musl; do
+            for f in "assets/opencraylsp-$t.tar.gz" "assets/opencraylsp-$t.tar.gz.sha256"; do
+              test -s "$f" || { echo "::error::$f is missing"; exit 1; }
+            done
+          done
+          if ! gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release create "$GITHUB_REF_NAME" \
+              --title "$GITHUB_REF_NAME" \
+              --generate-notes
+          fi
+          gh release upload "$GITHUB_REF_NAME" assets/* --clobber

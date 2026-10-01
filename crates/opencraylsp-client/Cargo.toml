@@ -1,0 +1,39 @@
+[package]
+name = "opencraylsp-client"
+description = "Client side of the opencraylspd daemon protocol: connect, auto-spawn, reconnect."
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+authors.workspace      = true
+readme.workspace       = true
+keywords.workspace     = true
+categories.workspace   = true
+
+[features]
+default = []
+# Development-only: builds the `fake-opencraylspd` stand-in used by the spawn tests.
+test-fake-daemon = []
+
+[[bin]]
+name = "fake-opencraylspd"
+path = "src/bin/fake-opencraylspd.rs"
+required-features = ["test-fake-daemon"]
+
+[dependencies]
+opencraylsp-proto = { workspace = true }
+async-trait       = { workspace = true }
+serde             = { workspace = true }
+serde_json        = { workspace = true }
+thiserror         = { workspace = true }
+tokio             = { workspace = true }
+tokio-util        = { workspace = true }
+tracing           = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+
+[lints]
+workspace = true

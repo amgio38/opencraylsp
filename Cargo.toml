@@ -1,0 +1,57 @@
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+
+[workspace.package]
+version      = "0.20260929.1"
+edition      = "2024"
+# Enforced by clippy's incompatible_msrv; the toolchain actually used is pinned
+# in rust-toolchain.toml.
+rust-version = "1.89"
+license      = "MIT"
+repository   = "https://github.com/amgio38/opencraylsp"
+authors      = ["The opencraylspd Authors"]
+readme       = "README.md"
+keywords     = ["lsp", "language-server", "mcp", "daemon", "developer-tools"]
+categories   = ["command-line-utilities", "development-tools"]
+
+[workspace.dependencies]
+# --- workspace-internal ---
+opencraylsp-proto  = { path = "crates/opencraylsp-proto", version = "0.20260929.1" }
+opencraylsp-core   = { path = "crates/opencraylsp-core", version = "0.20260929.1" }
+opencraylsp-tools  = { path = "crates/opencraylsp-tools", version = "0.20260929.1" }
+opencraylsp-client = { path = "crates/opencraylsp-client", version = "0.20260929.1" }
+
+# --- shared third-party ---
+async-trait        = "0.1"
+clap               = { version = "4", features = ["derive", "env"] }
+lsp-types          = "0.95"
+serde              = { version = "1", features = ["derive"] }
+serde_json         = "1"
+similar            = "2"
+tempfile           = "3"
+thiserror          = "2"
+tokio              = { version = "1", features = ["rt-multi-thread", "macros", "sync", "time", "process", "io-util", "fs", "net", "signal"] }
+tokio-util         = { version = "0.7", features = ["rt"] }
+toml               = "0.8"
+tracing            = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+url                = "2"
+
+[workspace.lints.rust]
+missing_debug_implementations = "warn"
+unsafe_code                   = "forbid"
+
+[workspace.lints.clippy]
+dbg_macro    = "warn"
+print_stdout = "warn"
+print_stderr = "warn"
+todo         = "warn"
+
+[profile.dev]
+debug = 1
+lto   = false
+
+[profile.release]
+lto           = "thin"
+codegen-units = 1

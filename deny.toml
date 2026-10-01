@@ -1,0 +1,58 @@
+# Dependency license policy, enforced by `make deny` (see also
+# scripts/check-licenses.sh, which checks the *notice* side of the same policy).
+#
+# This file is the policy. The license texts the policy obliges us to ship are
+# in `licenses/`, and the crate-by-crate accounting is in
+# THIRD-PARTY-LICENSES.md.
+
+[advisories]
+# A yanked or vulnerable dependency is a defect in a project that ships
+# binaries, so this is a gate rather than a report.
+yanked = "deny"
+# Known vulnerabilities are always denied; cargo-deny 0.16+ removed the
+# `vulnerability` key, and a config that still sets it fails to load.
+# `unmaintained` and `unsound` stay warnings on purpose: neither means the
+# build is broken today, and denying them would make routine upgrades fail for
+# no reason a maintainer can act on.
+
+[licenses]
+# Every license in the tree, and nothing else. The list is checked against
+# Cargo.lock by `make deny`; an expression that is not here fails the build.
+#
+# `Unlicense` is absent on purpose. Two crates (`aho-corasick`, `memchr`) offer
+# `Unlicense OR MIT`; we take the MIT half, so no public-domain text is needed.
+allow = [
+    "MIT",
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "Unicode-3.0",
+    "Unicode-DFS-2016",
+    "Zlib",
+    "CC0-1.0",
+    "MPL-2.0",
+]
+# `bitflags` 1.3.2, reached through `lsp-types`, declares `MIT/Apache-2.0`.
+# That is not valid SPDX: `/` is not an operator, so a strict parser cannot
+# read it and `cargo deny` reports the license as unknown. The crate is genuinely
+# dual MIT/Apache-2.0 upstream, which is the same election every other dual
+# dependency in the tree makes -- but the fix belongs upstream, in a
+# `lsp-types` bump, not in a rule written here to swallow a bad expression.
+# Until then this is recorded rather than worked around; see
+# THIRD-PARTY-LICENSES.md.
+#
+# `r-efi` declares `MIT OR Apache-2.0 OR LGPL-2.1-or-later`. The LGPL option is
+# never taken -- MIT is offered and is what we use -- so a `[bans] deny` list
+# naming "LGPL" must not be read as a finding about this tree.
+
+[bans]
+# Warn, not deny, and here is the reason: `syn` 2 and 3 are both in the tree
+# (`thiserror-impl` 2 pulls 3), and `bitflags` 1 and 2 are both in the tree
+# (`lsp-types` pulls 1). Both duplicates are upstream-version facts that a
+# `deny` here would only paper over; they are recorded in
+# THIRD-PARTY-LICENSES.md instead. If a *new* duplicate appears, this warning
+# is where it shows up first.
+multiple-versions = "warn"
+wildcards = "deny"

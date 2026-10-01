@@ -1,0 +1,21 @@
+{
+  "recorded_from": "gopls v0.22.0",
+  "workspace": "a one-file Go module (package probe)",
+  "query": "New",
+  "result": [
+    {
+      "name": "New",
+      "kind": 12,
+      "containerName": "example.com/probe",
+      "location": {
+        "uri": "file:///ws/probe.go",
+        "range": {
+          "start": {
+            "line": 10,
+            "character": 5
+          }
+        }
+      }
+    }
+  ]
+}

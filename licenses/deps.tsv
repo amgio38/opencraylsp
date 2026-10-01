@@ -1,0 +1,115 @@
+# name	version	license-expression	elected	texts-required
+aho-corasick	1.1.5	Unlicense OR MIT	MIT	licenses/MIT.txt
+anstream	1.0.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+anstyle	1.0.14	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+anstyle-parse	1.0.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+anstyle-query	1.1.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+anstyle-wincon	3.0.11	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+async-trait	0.1.92	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+bitflags	1.3.2	MIT/Apache-2.0	MIT/Apache-2.0	licenses/MIT.txt
+bitflags	2.13.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+bytes	1.12.1	MIT	MIT	licenses/MIT.txt
+cfg-if	1.0.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+clap	4.6.7	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+clap_builder	4.6.7	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+clap_derive	4.6.7	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+clap_lex	1.1.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+colorchoice	1.0.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+displaydoc	0.2.7	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+equivalent	1.0.2	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+errno	0.3.14	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+fastrand	2.5.0	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+form_urlencoded	1.2.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+futures-core	0.3.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+futures-macro	0.3.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+futures-sink	0.3.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+futures-task	0.3.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+futures-util	0.3.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+getrandom	0.4.3	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+hashbrown	0.17.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+heck	0.5.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+icu_collections	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_locale_core	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_normalizer	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_normalizer_data	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_properties	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_properties_data	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+icu_provider	2.2.0	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+idna	1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+idna_adapter	1.2.2	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+indexmap	2.14.2	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+is_terminal_polyfill	1.70.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+itoa	1.0.18	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+lazy_static	1.5.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+libc	0.2.189	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+linux-raw-sys	0.12.1	Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+litemap	0.8.3	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+log	0.4.34	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+lsp-types	0.95.1	MIT	MIT	licenses/MIT.txt
+matchers	0.2.0	MIT	MIT	licenses/MIT.txt
+memchr	2.8.3	Unlicense OR MIT	MIT	licenses/MIT.txt
+mio	1.2.3	MIT	MIT	licenses/MIT.txt
+nu-ansi-term	0.50.3	MIT	MIT	licenses/MIT.txt
+once_cell	1.21.4	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+once_cell_polyfill	1.70.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+percent-encoding	2.3.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+pin-project-lite	0.2.17	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+potential_utf	0.1.6	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+proc-macro2	1.0.107	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+quote	1.0.47	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+r-efi	6.0.0	MIT OR Apache-2.0 OR LGPL-2.1-or-later	MIT	licenses/MIT.txt
+regex-automata	0.4.18	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+regex-syntax	0.8.11	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+rustix	1.1.5	Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+serde	1.0.229	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_core	1.0.229	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_derive	1.0.229	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_json	1.0.151	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_repr	0.1.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_spanned	0.6.9	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+sharded-slab	0.1.7	MIT	MIT	licenses/MIT.txt
+signal-hook-registry	1.4.8	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+similar	2.7.0	Apache-2.0	Apache-2.0	licenses/Apache-2.0.txt
+slab	0.4.12	MIT	MIT	licenses/MIT.txt
+smallvec	1.16.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+socket2	0.6.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+stable_deref_trait	1.2.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+strsim	0.11.1	MIT	MIT	licenses/MIT.txt
+syn	2.0.119	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+syn	3.0.6	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+synstructure	0.14.0	MIT	MIT	licenses/MIT.txt
+tempfile	3.27.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+thiserror	2.0.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+thiserror-impl	2.0.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+thread_local	1.1.10	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+tinystr	0.8.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+tokio	1.53.1	MIT	MIT	licenses/MIT.txt
+tokio-macros	2.7.2	MIT	MIT	licenses/MIT.txt
+tokio-util	0.7.19	MIT	MIT	licenses/MIT.txt
+toml	0.8.23	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_datetime	0.6.11	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_edit	0.22.27	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_write	0.1.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+tracing	0.1.44	MIT	MIT	licenses/MIT.txt
+tracing-attributes	0.1.31	MIT	MIT	licenses/MIT.txt
+tracing-core	0.1.36	MIT	MIT	licenses/MIT.txt
+tracing-log	0.2.0	MIT	MIT	licenses/MIT.txt
+tracing-subscriber	0.3.23	MIT	MIT	licenses/MIT.txt
+unicode-ident	1.0.26	(MIT OR Apache-2.0) AND Unicode-3.0	MIT	licenses/MIT.txt,licenses/Unicode-3.0.txt
+url	2.5.8	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+utf8_iter	1.0.4	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+utf8parse	0.2.2	Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+valuable	0.1.1	MIT	MIT	licenses/MIT.txt
+wasi	0.11.1+wasi-snapshot-preview1	Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT	MIT	licenses/MIT.txt
+windows-link	0.2.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+windows-sys	0.61.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+winnow	0.7.15	MIT	MIT	licenses/MIT.txt
+writeable	0.6.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+yoke	0.8.3	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+yoke-derive	0.8.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zerofrom	0.1.8	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zerofrom-derive	0.1.8	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zerotrie	0.2.5	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zerovec	0.11.8	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zerovec-derive	0.11.6	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
+zmij	1.0.23	MIT	MIT	licenses/MIT.txt

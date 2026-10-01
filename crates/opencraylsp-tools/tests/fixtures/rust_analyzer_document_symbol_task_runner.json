@@ -1,0 +1,288 @@
+{
+  "recorded_from": "rust-analyzer 1.95.0",
+  "file": "crates/core-lib/src/task_runner.rs",
+  "result": [
+    {
+      "name": "TaskRequest",
+      "kind": 23,
+      "range": {
+        "start": {
+          "line": 13,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 15,
+          "character": 11
+        }
+      },
+      "children": [
+        {
+          "name": "origin",
+          "kind": 8,
+          "range": {
+            "start": {
+              "line": 16,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 17,
+              "character": 8
+            }
+          }
+        },
+        {
+          "name": "text",
+          "kind": 8,
+          "range": {
+            "start": {
+              "line": 18,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 19,
+              "character": 8
+            }
+          }
+        },
+        {
+          "name": "channel",
+          "kind": 8,
+          "range": {
+            "start": {
+              "line": 20,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 21,
+              "character": 8
+            }
+          }
+        },
+        {
+          "name": "chat_id",
+          "kind": 8,
+          "range": {
+            "start": {
+              "line": 22,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 23,
+              "character": 8
+            }
+          }
+        },
+        {
+          "name": "agent_id",
+          "kind": 8,
+          "range": {
+            "start": {
+              "line": 24,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 26,
+              "character": 8
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "TaskRunner",
+      "kind": 11,
+      "range": {
+        "start": {
+          "line": 29,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 31,
+          "character": 10
+        }
+      },
+      "children": [
+        {
+          "name": "start",
+          "kind": 6,
+          "range": {
+            "start": {
+              "line": 32,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 33,
+              "character": 7
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "runners",
+      "kind": 12,
+      "range": {
+        "start": {
+          "line": 36,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 36,
+          "character": 3
+        }
+      },
+      "children": [
+        {
+          "name": "RUNNERS",
+          "kind": 14,
+          "range": {
+            "start": {
+              "line": 37,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 37,
+              "character": 11
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "set_runner",
+      "kind": 12,
+      "range": {
+        "start": {
+          "line": 41,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 42,
+          "character": 7
+        }
+      }
+    },
+    {
+      "name": "runner",
+      "kind": 12,
+      "range": {
+        "start": {
+          "line": 54,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 55,
+          "character": 7
+        }
+      }
+    },
+    {
+      "name": "tests",
+      "kind": 2,
+      "range": {
+        "start": {
+          "line": 63,
+          "character": 0
+        }
+      },
+      "selectionRange": {
+        "start": {
+          "line": 64,
+          "character": 4
+        }
+      },
+      "children": [
+        {
+          "name": "Recording",
+          "kind": 23,
+          "range": {
+            "start": {
+              "line": 67,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 67,
+              "character": 11
+            }
+          }
+        },
+        {
+          "name": "impl TaskRunner for Recording",
+          "kind": 19,
+          "range": {
+            "start": {
+              "line": 69,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 69,
+              "character": 24
+            }
+          },
+          "children": [
+            {
+              "name": "start",
+              "kind": 6,
+              "range": {
+                "start": {
+                  "line": 70,
+                  "character": 8
+                }
+              },
+              "selectionRange": {
+                "start": {
+                  "line": 70,
+                  "character": 11
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "a_registered_runner_is_found_by_its_mode_and_can_be_removed",
+          "kind": 12,
+          "range": {
+            "start": {
+              "line": 76,
+              "character": 4
+            }
+          },
+          "selectionRange": {
+            "start": {
+              "line": 77,
+              "character": 7
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

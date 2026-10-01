@@ -1,0 +1,39 @@
+[package]
+name = "opencraylspd"
+description = "Shared language-server daemon: pools language servers across clients and enforces resource limits."
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+authors.workspace      = true
+readme.workspace       = true
+keywords.workspace     = true
+categories.workspace   = true
+
+[[bin]]
+name = "opencraylspd"
+path = "src/main.rs"
+
+[dependencies]
+async-trait        = { workspace = true }
+opencraylsp-proto  = { workspace = true }
+opencraylsp-core   = { workspace = true }
+opencraylsp-tools  = { workspace = true }
+opencraylsp-client = { workspace = true }
+clap               = { workspace = true }
+serde              = { workspace = true }
+serde_json         = { workspace = true }
+thiserror          = { workspace = true }
+tokio              = { workspace = true }
+tokio-util         = { workspace = true }
+tracing            = { workspace = true }
+tracing-subscriber = { workspace = true }
+
+[dev-dependencies]
+opencraylsp-core = { workspace = true, features = ["testing"] }
+tempfile         = { workspace = true }
+
+[lints]
+workspace = true

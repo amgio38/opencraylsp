@@ -1,0 +1,58 @@
+# Build output
+/target
+/dist
+**/*.rs.bk
+
+# Test and coverage artefacts
+*.profraw
+*.profdata
+lcov.info
+/coverage
+tarpaulin-report.html
+*.log
+
+# Installer scratch space (staging directories left by an interrupted install)
+.opencraylsp.install.*
+
+# Local secrets and credentials: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.cargo/credentials
+.cargo/credentials.toml
+
+# Editors and IDEs
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.history/
+
+# Operating system files
+.DS_Store
+.AppleDouble
+Thumbs.db
+Desktop.ini
+
+# Local tool and AI-agent state (per developer, not part of the project)
+.claude/
+.cray/
+.cursor/
+.opencode/
+.codex/
+.aider*
+CLAUDE.local.md
+
+# Scratch files
+*.tmp
+*.bak
+*.orig
+*.rej
+__pycache__/
+*.pyc

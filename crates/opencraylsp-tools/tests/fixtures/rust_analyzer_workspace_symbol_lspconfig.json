@@ -1,0 +1,33 @@
+{
+  "recorded_from": "rust-analyzer 1.95.0",
+  "workspace": "the sample_project cargo workspace",
+  "query": "LspConfig",
+  "result": [
+    {
+      "name": "LspConfig",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/lsp/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 39,
+            "character": 17
+          }
+        }
+      }
+    },
+    {
+      "name": "LspConfig",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/lsp/src/config.rs",
+        "range": {
+          "start": {
+            "line": 30,
+            "character": 11
+          }
+        }
+      }
+    }
+  ]
+}

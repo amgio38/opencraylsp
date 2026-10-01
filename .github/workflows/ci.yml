@@ -1,0 +1,84 @@
+name: ci
+
+# Everything a pull request must pass before it can be merged. Each step is also
+# runnable locally: see the same commands in the Makefile and scripts/.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# Read-only: CI never needs to write to the repository. release.yml asks for
+# `contents: write` because it uploads assets.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  ci:
+    name: fmt, clippy, test, checks
+    runs-on: ubuntu-latest
+    # e2e tests start a daemon and fake servers; a hang must not hold the
+    # runner until GitHub's 6-hour default.
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      # The toolchain is pinned in rust-toolchain.toml as well; the action is
+      # referenced by its version tag (not a moving branch) and installs
+      # rustfmt/clippy up front instead of on first use.
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@1.95.0
+        with:
+          components: rustfmt, clippy
+
+      - name: Cache cargo
+        uses: Swatinem/rust-cache@v2
+
+      - name: cargo fmt
+        run: cargo fmt --all -- --check
+
+      - name: cargo clippy (default features)
+        run: cargo clippy --workspace --all-targets --locked -- -D warnings
+
+      - name: cargo clippy (all features)
+        run: cargo clippy --workspace --all-targets --all-features --locked -- -D warnings
+
+      - name: cargo test
+        run: cargo test --workspace --locked
+
+      # `test-fake-host` is not a default feature, so `cargo test` above skips
+      # opencraylsp-mcp/tests/binary_smoke.rs; run it explicitly.
+      - name: cargo test (opencraylsp-mcp, all features)
+        run: cargo test -p opencraylsp-mcp --all-features --locked
+
+      - name: layering check
+        run: |
+          scripts/check-layering.sh
+          scripts/check-layering.test.sh
+
+      - name: license and release hygiene check
+        run: scripts/check-licenses.sh
+
+      - name: installer tests (network stubbed)
+        run: scripts/install-sh.test.sh
+
+      # deny.toml is a policy only if something runs it. Before this step a
+      # copyleft or yanked dependency merged as readily as a good one, and
+      # `yanked = "deny"` in the file was a comment.
+      - name: install cargo-deny
+        uses: taiki-e/install-action@cargo-deny
+
+      - name: cargo deny (licenses, bans, advisories)
+        run: cargo deny --all-features check licenses bans advisories sources
+
+      - name: documentation check
+        run: scripts/check-docs.sh
+
+      - name: generated tools doc check
+        run: scripts/check-tools-doc.sh

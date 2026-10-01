@@ -1,0 +1,1813 @@
+[
+ {
+  "t": 27,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "begin",
+   "title": "Fetching",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 27,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "discovering sysroot"
+  }
+ },
+ {
+  "t": 73,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "querying project metadata"
+  }
+ },
+ {
+  "t": 151,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: started"
+  }
+ },
+ {
+  "t": 185,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: started"
+  }
+ },
+ {
+  "t": 244,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: finished"
+  }
+ },
+ {
+  "t": 307,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: finished"
+  }
+ },
+ {
+  "t": 308,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 333,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "begin",
+   "title": "Building CrateGraph",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 333,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 334,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "begin",
+   "title": "Roots Scanned",
+   "cancellable": false,
+   "message": "0<path>",
+   "percentage": 0
+  }
+ },
+ {
+  "t": 334,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "0<path> <path>",
+   "percentage": 0
+  }
+ },
+ {
+  "t": 334,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 344,
+  "token": "rustAnalyzer/Building compile-time-deps",
+  "value": {
+   "kind": "begin",
+   "title": "Building compile-time-deps",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 344,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path> <path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 349,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path> <path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 349,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 382,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 382,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 392,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 392,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 411,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 411,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 411,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 411,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 413,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 415,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 415,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 417,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 417,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 417,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 417,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 421,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 421,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 421,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 421,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 421,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 422,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 422,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 422,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 422,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 422,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 423,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 423,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 425,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 425,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 425,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 425,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 440,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 440,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "15<path>",
+   "percentage": 100
+  }
+ },
+ {
+  "t": 520,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "end",
+   "message": "15<path>"
+  }
+ },
+ {
+  "t": 520,
+  "token": "rustAnalyzer/Building compile-time-deps",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 533,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "begin",
+   "title": "Building CrateGraph",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 533,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 533,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "begin",
+   "title": "Roots Scanned",
+   "cancellable": false,
+   "message": "0<path>",
+   "percentage": 0
+  }
+ },
+ {
+  "t": 533,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "0<path> <path>",
+   "percentage": 0
+  }
+ },
+ {
+  "t": 533,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 534,
+  "token": "rustAnalyzer/Loading proc-macros",
+  "value": {
+   "kind": "begin",
+   "title": "Loading proc-macros",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 534,
+  "token": "rustAnalyzer/Loading proc-macros",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 537,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path> <path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 545,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "13<path> <path>",
+   "percentage": 86
+  }
+ },
+ {
+  "t": 545,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 575,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 575,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 586,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 586,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 605,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 605,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 605,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 605,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 607,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 607,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 609,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 611,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 611,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 611,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 611,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 615,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 615,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 616,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 616,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 616,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 616,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 617,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 617,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 617,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 617,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 618,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 618,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 628,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "14<path> <path>",
+   "percentage": 93
+  }
+ },
+ {
+  "t": 628,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "15<path>",
+   "percentage": 100
+  }
+ },
+ {
+  "t": 728,
+  "token": "rustAnalyzer/Roots Scanned",
+  "value": {
+   "kind": "end",
+   "message": "15<path>"
+  }
+ },
+ {
+  "t": 785,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "begin",
+   "title": "Fetching",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 785,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "discovering sysroot"
+  }
+ },
+ {
+  "t": 785,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "querying project metadata"
+  }
+ },
+ {
+  "t": 863,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: started"
+  }
+ },
+ {
+  "t": 895,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: started"
+  }
+ },
+ {
+  "t": 914,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: finished"
+  }
+ },
+ {
+  "t": 1023,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "report",
+   "cancellable": false,
+   "message": "cargo metadata: finished"
+  }
+ },
+ {
+  "t": 1024,
+  "token": "rustAnalyzer/Fetching",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 1024,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "begin",
+   "title": "Building CrateGraph",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 1038,
+  "token": "rustAnalyzer/Building CrateGraph",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 1055,
+  "token": "rustAnalyzer/Loading proc-macros",
+  "value": {
+   "kind": "begin",
+   "title": "Loading proc-macros",
+   "cancellable": false
+  }
+ },
+ {
+  "t": 1055,
+  "token": "rustAnalyzer/Loading proc-macros",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 1057,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "begin",
+   "title": "Indexing",
+   "cancellable": true,
+   "percentage": 0
+  }
+ },
+ {
+  "t": 1057,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 1062,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "begin",
+   "title": "cargo check",
+   "cancellable": true
+  }
+ },
+ {
+  "t": 1062,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 1065,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "begin",
+   "title": "Indexing",
+   "cancellable": true,
+   "percentage": 0
+  }
+ },
+ {
+  "t": 1066,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 0
+  }
+ },
+ {
+  "t": 1071,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "0<path> (foldhash + 2 more)",
+   "percentage": 0
+  }
+ },
+ {
+  "t": 1071,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "1<path> (rand_core + 1 more)",
+   "percentage": 4
+  }
+ },
+ {
+  "t": 1071,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "2<path> (core + 2 more)",
+   "percentage": 9
+  }
+ },
+ {
+  "t": 1072,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "2<path> (core + 2 more)",
+   "percentage": 9
+  }
+ },
+ {
+  "t": 1072,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "2<path> (core + 2 more)",
+   "percentage": 9
+  }
+ },
+ {
+  "t": 1072,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "2<path> (core + 2 more)",
+   "percentage": 9
+  }
+ },
+ {
+  "t": 1072,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "3<path> (core + 1 more)",
+   "percentage": 14
+  }
+ },
+ {
+  "t": 1073,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "3<path> (core + 1 more)",
+   "percentage": 14
+  }
+ },
+ {
+  "t": 1073,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "3<path> (core + 1 more)",
+   "percentage": 14
+  }
+ },
+ {
+  "t": 1073,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "3<path> (core + 1 more)",
+   "percentage": 14
+  }
+ },
+ {
+  "t": 1138,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "begin",
+   "title": "cargo check",
+   "cancellable": true
+  }
+ },
+ {
+  "t": 1138,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "4<path> (core)",
+   "percentage": 19
+  }
+ },
+ {
+  "t": 1140,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "4<path> (core)",
+   "percentage": 19
+  }
+ },
+ {
+  "t": 1152,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "4<path> (core)",
+   "percentage": 19
+  }
+ },
+ {
+  "t": 1377,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "probe (lib)"
+  }
+ },
+ {
+  "t": 1377,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "probe (lib)"
+  }
+ },
+ {
+  "t": 1385,
+  "token": "rust-analyzer/flycheck/0",
+  "value": {
+   "kind": "end"
+  }
+ },
+ {
+  "t": 3669,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "5<path> (compiler_builtins + 3 more)",
+   "percentage": 23
+  }
+ },
+ {
+  "t": 3669,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "5<path> (compiler_builtins + 5 more)",
+   "percentage": 23
+  }
+ },
+ {
+  "t": 3669,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "6<path> (compiler_builtins + 4 more)",
+   "percentage": 28
+  }
+ },
+ {
+  "t": 3670,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "7<path> (compiler_builtins + 3 more)",
+   "percentage": 33
+  }
+ },
+ {
+  "t": 3670,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "7<path> (compiler_builtins + 3 more)",
+   "percentage": 33
+  }
+ },
+ {
+  "t": 3671,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "7<path> (compiler_builtins + 3 more)",
+   "percentage": 33
+  }
+ },
+ {
+  "t": 3676,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "8<path> (compiler_builtins + 2 more)",
+   "percentage": 38
+  }
+ },
+ {
+  "t": 3677,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "8<path> (compiler_builtins + 2 more)",
+   "percentage": 38
+  }
+ },
+ {
+  "t": 3687,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "9<path> (compiler_builtins + 1 more)",
+   "percentage": 42
+  }
+ },
+ {
+  "t": 3689,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "9<path> (compiler_builtins + 1 more)",
+   "percentage": 42
+  }
+ },
+ {
+  "t": 3735,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "9<path> (compiler_builtins + 1 more)",
+   "percentage": 42
+  }
+ },
+ {
+  "t": 3984,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "10<path> (libc + 1 more)",
+   "percentage": 47
+  }
+ },
+ {
+  "t": 3987,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "10<path> (libc + 1 more)",
+   "percentage": 47
+  }
+ },
+ {
+  "t": 4149,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4155,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc + 1 more)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4155,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc + 1 more)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4201,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc + 1 more)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4202,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc + 1 more)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4202,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "11<path> (libc + 1 more)",
+   "percentage": 52
+  }
+ },
+ {
+  "t": 4211,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "13<path> (unwind + 1 more)",
+   "percentage": 61
+  }
+ },
+ {
+  "t": 4213,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "13<path> (unwind + 1 more)",
+   "percentage": 61
+  }
+ },
+ {
+  "t": 4213,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "13<path> (unwind + 1 more)",
+   "percentage": 61
+  }
+ },
+ {
+  "t": 4214,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "14<path> (std_detect + 1 more)",
+   "percentage": 66
+  }
+ },
+ {
+  "t": 4215,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "14<path> (std_detect + 1 more)",
+   "percentage": 66
+  }
+ },
+ {
+  "t": 4215,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "14<path> (std_detect + 1 more)",
+   "percentage": 66
+  }
+ },
+ {
+  "t": 4217,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "15<path> (std_detect)",
+   "percentage": 71
+  }
+ },
+ {
+  "t": 4218,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "15<path> (std_detect)",
+   "percentage": 71
+  }
+ },
+ {
+  "t": 4218,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "15<path> (std_detect)",
+   "percentage": 71
+  }
+ },
+ {
+  "t": 4225,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "15<path> (std_detect)",
+   "percentage": 71
+  }
+ },
+ {
+  "t": 4227,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "15<path> (std_detect)",
+   "percentage": 71
+  }
+ },
+ {
+  "t": 4275,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "16<path> (std)",
+   "percentage": 76
+  }
+ },
+ {
+  "t": 4278,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "16<path> (std)",
+   "percentage": 76
+  }
+ },
+ {
+  "t": 4285,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "16<path> (std)",
+   "percentage": 76
+  }
+ },
+ {
+  "t": 4339,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "16<path> (std)",
+   "percentage": 76
+  }
+ },
+ {
+  "t": 4505,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "16<path> (std)",
+   "percentage": 76
+  }
+ },
+ {
+  "t": 4590,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "17<path> (proc_macro + 1 more)",
+   "percentage": 80
+  }
+ },
+ {
+  "t": 4594,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "18<path> (proc_macro + 1 more)",
+   "percentage": 85
+  }
+ },
+ {
+  "t": 4596,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "18<path> (proc_macro + 1 more)",
+   "percentage": 85
+  }
+ },
+ {
+  "t": 4610,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "18<path> (proc_macro + 1 more)",
+   "percentage": 85
+  }
+ },
+ {
+  "t": 4633,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "18<path> (proc_macro + 1 more)",
+   "percentage": 85
+  }
+ },
+ {
+  "t": 4646,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "19<path> (proc_macro)",
+   "percentage": 90
+  }
+ },
+ {
+  "t": 4647,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "19<path> (proc_macro)",
+   "percentage": 90
+  }
+ },
+ {
+  "t": 4648,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "19<path> (proc_macro)",
+   "percentage": 90
+  }
+ },
+ {
+  "t": 4671,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "message": "20<path> (probe)",
+   "percentage": 95
+  }
+ },
+ {
+  "t": 4671,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4671,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4671,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4676,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4676,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4684,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "report",
+   "cancellable": true,
+   "percentage": 100
+  }
+ },
+ {
+  "t": 4719,
+  "token": "rustAnalyzer/cachePriming",
+  "value": {
+   "kind": "end"
+  }
+ }
+]

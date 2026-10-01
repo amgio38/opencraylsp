@@ -1,0 +1,35 @@
+[package]
+name = "opencraylspd-e2e"
+description = "End-to-end tests: real opencraylspd + real opencraylsp-mcp + a fake language server."
+publish = false
+version.workspace      = true
+edition.workspace      = true
+rust-version.workspace = true
+license.workspace      = true
+repository.workspace   = true
+authors.workspace      = true
+readme.workspace       = true
+keywords.workspace     = true
+categories.workspace   = true
+
+[[bin]]
+name = "fake-lsp"
+path = "src/bin/fake_lsp.rs"
+
+[dependencies]
+serde_json = { workspace = true }
+
+[dev-dependencies]
+opencraylsp-proto = { workspace = true }
+serde_json        = { workspace = true }
+tokio             = { workspace = true }
+tokio-util        = { workspace = true }
+tempfile          = { workspace = true }
+# Not used by these tests directly: requesting `test-fake-daemon` makes cargo
+# build opencraylsp-client's `fake-opencraylspd` binary for a plain `cargo test --workspace`,
+# which opencraylsp-client's own spawn tests need (they are not feature-gated, so the
+# bin must exist in every workspace test run). See opencraylsp-client/tests/lifecycle.rs.
+opencraylsp-client = { workspace = true, features = ["test-fake-daemon"] }
+
+[lints]
+workspace = true

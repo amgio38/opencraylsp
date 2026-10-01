@@ -1,0 +1,20 @@
+{
+  "recorded_from": "rust-analyzer 1.95.0",
+  "workspace": "the sample_project cargo workspace",
+  "query": "a_registered_runner_is_found_by_its_mode_and_can_be_removed",
+  "result": [
+    {
+      "name": "a_registered_runner_is_found_by_its_mode_and_can_be_removed",
+      "kind": 12,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/task_runner.rs",
+        "range": {
+          "start": {
+            "line": 77,
+            "character": 7
+          }
+        }
+      }
+    }
+  ]
+}

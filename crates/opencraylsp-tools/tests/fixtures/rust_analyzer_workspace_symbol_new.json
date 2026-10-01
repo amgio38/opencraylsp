@@ -1,0 +1,397 @@
+{
+  "recorded_from": "rust-analyzer 1.95.0",
+  "workspace": "the sample_project cargo workspace",
+  "query": "new",
+  "result": [
+    {
+      "name": "AgentHandleSpawner",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/engine/src/handle_spawner.rs",
+        "range": {
+          "start": {
+            "line": 20,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "BrowserResponseWaitHandler",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/core_methods/browser.rs",
+        "range": {
+          "start": {
+            "line": 320,
+            "character": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "BrowserResponseWaitResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser.rs",
+        "range": {
+          "start": {
+            "line": 23,
+            "character": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "BrowserResponseWaitResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser/port.rs",
+        "range": {
+          "start": {
+            "line": 119,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "BrowserResponseWaitResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "CancellingSpawner",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/goal/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 2404,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "ContextUsageBreakdown",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/context_usage.rs",
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadedNetworkHandler",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/core_methods/browser.rs",
+        "range": {
+          "start": {
+            "line": 1211,
+            "character": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkHandler",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/core_methods/browser.rs",
+        "range": {
+          "start": {
+            "line": 1430,
+            "character": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkRequest",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser.rs",
+        "range": {
+          "start": {
+            "line": 17,
+            "character": 67
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkRequest",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser/headless.rs",
+        "range": {
+          "start": {
+            "line": 108,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkRequest",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 61,
+            "character": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser.rs",
+        "range": {
+          "start": {
+            "line": 18,
+            "character": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/browser/headless.rs",
+        "range": {
+          "start": {
+            "line": 126,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "HeadlessNetworkResult",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 61,
+            "character": 28
+          }
+        }
+      }
+    },
+    {
+      "name": "LineWebhookBody",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/channel/src/line.rs",
+        "range": {
+          "start": {
+            "line": 59,
+            "character": 7
+          }
+        }
+      }
+    },
+    {
+      "name": "NewCronJob",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/core-lib/src/cron_control.rs",
+        "range": {
+          "start": {
+            "line": 31,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "NodeView",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/nodes/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 48,
+            "character": 61
+          }
+        }
+      }
+    },
+    {
+      "name": "NodeView",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/nodes/src/nodes.rs",
+        "range": {
+          "start": {
+            "line": 61,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "PermissionModeWorkspaceEntry",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/config-lib/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 277,
+            "character": 7
+          }
+        }
+      }
+    },
+    {
+      "name": "qa_init47_trusted_workspace_in_system_tree",
+      "kind": 4,
+      "location": {
+        "uri": "file:///ws/crates/engine/tests/trusted_workspace_in_system_tree.rs",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "qa_t10_browser_headed_console_network_pdf",
+      "kind": 4,
+      "location": {
+        "uri": "file:///ws/crates/engine/tests/browser_console_report.rs",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "RuntimeTaskSpawner",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/runtime.rs",
+        "range": {
+          "start": {
+            "line": 3219,
+            "character": 7
+          }
+        }
+      }
+    },
+    {
+      "name": "SenderAllowlist",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/plugins/channel/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 105,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "SessionsNewHandler",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/core_methods/sessions.rs",
+        "range": {
+          "start": {
+            "line": 252,
+            "character": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "SessionsPreviewHandler",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/app-lib/src/core_methods/sessions.rs",
+        "range": {
+          "start": {
+            "line": 781,
+            "character": 18
+          }
+        }
+      }
+    },
+    {
+      "name": "unicode_width",
+      "kind": 4,
+      "location": {
+        "uri": "file:///deps/unicode-width-0.1.14/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "unicode_width",
+      "kind": 4,
+      "location": {
+        "uri": "file:///deps/unicode-width-0.2.0/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "WhatsNewEntry",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/build-info/src/whats_new.rs",
+        "range": {
+          "start": {
+            "line": 23,
+            "character": 11
+          }
+        }
+      }
+    },
+    {
+      "name": "WhatsNewEntry",
+      "kind": 23,
+      "location": {
+        "uri": "file:///ws/crates/build-info/src/lib.rs",
+        "range": {
+          "start": {
+            "line": 19,
+            "character": 20
+          }
+        }
+      }
+    }
+  ]
+}
