@@ -1,0 +1,76 @@
+name: Bug report
+description: Something does not work as documented
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. A good report lets us reproduce the problem.
+        **Do not paste secrets.** Review logs for tokens, passwords and private paths first.
+        For a security problem, use the private report link on the issue chooser instead.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `opencraylspd --version` and `opencraylsp-mcp --version`.
+      placeholder: "opencraylspd 0.20260929.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - install.sh (prebuilt binary)
+        - install.sh (built from source)
+        - make install from a checkout
+        - cargo build / other
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and CPU
+      description: For example "Ubuntu 24.04 x86_64", "macOS 15 arm64", "Windows 11 + WSL2 Ubuntu".
+    validations:
+      required: true
+  - type: input
+    id: client
+    attributes:
+      label: Agent / MCP client
+      description: Which tool launches `opencraylsp-mcp`, and its version (Claude Code, Cursor, opencode, ...).
+  - type: input
+    id: language-server
+    attributes:
+      label: Language server involved
+      description: For example `rust-analyzer 1.95.0`, `gopls v0.16`, `pyright 1.1.380`.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Include the exact tool call (for example `lsp_find_symbol` with its arguments) and the full reply.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest project and the shortest sequence of calls that shows the problem.
+      placeholder: |
+        1. ...
+        2. ...
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: |
+        Output of `opencraylspd status` and `opencraylspd doctor`, plus the last lines of the daemon log
+        (`tail -n 50 "${XDG_STATE_HOME:-$HOME/.local/state}/opencraylsp/opencraylsp.log"`).
+      render: text

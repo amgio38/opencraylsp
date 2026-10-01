@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability (private)
+    url: https://github.com/amgio38/opencraylsp/security/advisories/new
+    about: Please do not open a public issue for a security problem. Report it privately here instead.
+  - name: Questions and how-to
+    url: https://github.com/amgio38/opencraylsp/blob/main/docs/TROUBLESHOOTING.md
+    about: Check the troubleshooting guide first; it covers the common errors and where the log is.

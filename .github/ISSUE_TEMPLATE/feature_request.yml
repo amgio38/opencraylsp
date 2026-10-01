@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement or a new capability
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation first, not the solution. What were you doing, and what got in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Including doing it with the current tools, and why that is not enough.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - A tool (lsp_*) or its output
+        - A language or language-server integration
+        - The daemon (memory, lifecycle, security)
+        - Installation / releases
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Platform
+      description: Native Windows is not supported (the daemon uses Unix sockets); WSL2 is.
+      options:
+        - label: I checked that this is not already described in the docs or the changelog.
+          required: true

@@ -1,0 +1,29 @@
+version: 2
+updates:
+  # Rust dependencies. Minor and patch updates arrive as one weekly PR so a
+  # single maintainer is not buried in a dozen; major updates stay separate
+  # because they may need code changes. Security updates are separate and
+  # immediate (they are switched on in the repository settings).
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+    groups:
+      cargo-minor-and-patch:
+        update-types: ["minor", "patch"]
+
+  # The actions used by .github/workflows.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+    groups:
+      actions:
+        patterns: ["*"]
