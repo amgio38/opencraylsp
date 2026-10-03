@@ -66,7 +66,7 @@ serde_core	1.0.229	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 serde_derive	1.0.229	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 serde_json	1.0.151	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 serde_repr	0.1.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-serde_spanned	0.6.9	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+serde_spanned	1.1.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 sharded-slab	0.1.7	MIT	MIT	licenses/MIT.txt
 signal-hook-registry	1.4.8	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 similar	2.7.0	Apache-2.0	Apache-2.0	licenses/Apache-2.0.txt
@@ -86,10 +86,10 @@ tinystr	0.8.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
 tokio	1.53.1	MIT	MIT	licenses/MIT.txt
 tokio-macros	2.7.2	MIT	MIT	licenses/MIT.txt
 tokio-util	0.7.19	MIT	MIT	licenses/MIT.txt
-toml	0.8.23	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-toml_datetime	0.6.11	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-toml_edit	0.22.27	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-toml_write	0.1.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml	1.1.6+spec-1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_datetime	1.1.1+spec-1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_parser	1.1.3+spec-1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+toml_writer	1.1.2+spec-1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 tracing	0.1.44	MIT	MIT	licenses/MIT.txt
 tracing-attributes	0.1.31	MIT	MIT	licenses/MIT.txt
 tracing-core	0.1.36	MIT	MIT	licenses/MIT.txt
@@ -103,7 +103,7 @@ valuable	0.1.1	MIT	MIT	licenses/MIT.txt
 wasi	0.11.1+wasi-snapshot-preview1	Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT	MIT	licenses/MIT.txt
 windows-link	0.2.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 windows-sys	0.61.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-winnow	0.7.15	MIT	MIT	licenses/MIT.txt
+winnow	1.0.4	MIT	MIT	licenses/MIT.txt
 writeable	0.6.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
 yoke	0.8.3	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
 yoke-derive	0.8.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
