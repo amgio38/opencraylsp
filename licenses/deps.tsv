@@ -8,6 +8,7 @@ anstyle-wincon	3.0.11	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 async-trait	0.1.92	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 bitflags	1.3.2	MIT/Apache-2.0	MIT/Apache-2.0	licenses/MIT.txt
 bitflags	2.13.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
+bstr	1.13.1	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 bytes	1.12.1	MIT	MIT	licenses/MIT.txt
 cfg-if	1.0.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 clap	4.6.7	MIT OR Apache-2.0	MIT	licenses/MIT.txt
@@ -69,7 +70,7 @@ serde_repr	0.1.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 serde_spanned	0.6.9	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 sharded-slab	0.1.7	MIT	MIT	licenses/MIT.txt
 signal-hook-registry	1.4.8	MIT OR Apache-2.0	MIT	licenses/MIT.txt
-similar	2.7.0	Apache-2.0	Apache-2.0	licenses/Apache-2.0.txt
+similar	3.2.0	Apache-2.0	Apache-2.0	licenses/Apache-2.0.txt
 slab	0.4.12	MIT	MIT	licenses/MIT.txt
 smallvec	1.16.2	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 socket2	0.6.5	MIT OR Apache-2.0	MIT	licenses/MIT.txt
