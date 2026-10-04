@@ -54,17 +54,30 @@ fn a_full_session_is_answered_on_stdout_and_exits_zero() {
     let (code, lines) = run(&["--fake-host"], SESSION);
     assert_eq!(code, 0);
     assert_eq!(lines.len(), 2, "two requests, two replies: {lines:?}");
+    // Requests are served on spawned tasks (see mcp.rs), so reply order on
+    // stdout is not the request order. Match by id, not by line index — the
+    // CI flake on main after #5 was exactly id 2 landing first.
+    let mut by_id = std::collections::BTreeMap::new();
     for line in &lines {
         let v: serde_json::Value =
             serde_json::from_str(line).unwrap_or_else(|e| panic!("not JSON-RPC: {line} ({e})"));
         assert_eq!(v["jsonrpc"], "2.0");
+        let id = v["id"]
+            .as_i64()
+            .unwrap_or_else(|| panic!("reply without numeric id: {line}"));
+        assert!(
+            by_id.insert(id, v).is_none(),
+            "duplicate reply id {id}: {lines:?}"
+        );
     }
-    let first: serde_json::Value = serde_json::from_str(&lines[0]).unwrap();
-    assert_eq!(first["id"], serde_json::json!(1));
-    assert_eq!(first["result"]["serverInfo"]["name"], "opencraylsp-mcp");
-    let second: serde_json::Value = serde_json::from_str(&lines[1]).unwrap();
-    assert_eq!(second["id"], serde_json::json!(2));
-    assert_eq!(second["result"]["tools"][0]["name"], "lsp_status");
+    let init = by_id
+        .get(&1)
+        .unwrap_or_else(|| panic!("missing id 1: {lines:?}"));
+    assert_eq!(init["result"]["serverInfo"]["name"], "opencraylsp-mcp");
+    let listed = by_id
+        .get(&2)
+        .unwrap_or_else(|| panic!("missing id 2: {lines:?}"));
+    assert_eq!(listed["result"]["tools"][0]["name"], "lsp_status");
 }
 
 #[test]
@@ -95,13 +108,16 @@ fn tracing_output_never_reaches_stdout() {
         .wait_with_output()
         .expect("opencraylsp-mcp should exit");
     let stdout = String::from_utf8_lossy(&out.stdout);
+    let mut ids = std::collections::BTreeSet::new();
     for line in stdout.lines() {
-        serde_json::from_str::<serde_json::Value>(line)
+        let v: serde_json::Value = serde_json::from_str(line)
             .unwrap_or_else(|e| panic!("stdout polluted: {line:?} ({e})"));
+        ids.insert(v["id"].as_i64().expect("numeric id"));
     }
-    assert!(
-        stdout.lines().count() == 2,
-        "expected exactly two replies: {stdout}"
+    assert_eq!(
+        ids,
+        [1, 2].into_iter().collect(),
+        "expected replies for ids 1 and 2: {stdout}"
     );
 }
 
