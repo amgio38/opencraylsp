@@ -40,6 +40,18 @@ if [ -n "$dirty" ]; then
 fi
 echo "  clean"
 
+# CI calls most scripts directly (`scripts/foo.sh`), so a script committed as 100644 fails
+# there with exit code 126 while passing locally, where the working-tree file is
+# executable. Check what git will actually store. doc-files.sh is sourced, not run.
+step "scripts are executable in git"
+nonexec="$(git ls-files -s -- 'scripts/*.sh' | awk '$1 != "100755" {print $4}' | grep -v '^scripts/doc-files\.sh$' || true)"
+if [ -n "$nonexec" ]; then
+	echo "preflight: these scripts are not executable in git (git update-index --chmod=+x):" >&2
+	printf '%s\n' "$nonexec" >&2
+	exit 1
+fi
+echo "  all executable"
+
 step "lockfile and workspace version agree"
 cargo metadata --locked --offline --format-version 1 >/dev/null
 version="$(sed -n '/^\[workspace\.package\]/,/^\[/{s/^version *= *"\(.*\)"/\1/p}' Cargo.toml | head -1)"
