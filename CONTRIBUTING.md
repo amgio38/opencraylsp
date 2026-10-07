@@ -42,6 +42,7 @@ make test           # cargo test --workspace
 make layering       # dependency-direction check
 make docs-check     # docs links / language / TOOLS.md sync
 make ci             # all of the above
+make preflight      # what CI runs, in CI order: run it before every push (docs/RELEASING.md)
 ```
 
 `make release-static` builds self-contained `dist/opencraylspd` and `dist/opencraylsp-mcp`. It

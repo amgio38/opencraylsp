@@ -6,7 +6,7 @@ export RUST_TEST_THREADS ?= 14
 # so `make install` and `make release-static` keep working when it is set.
 TARGET_DIR ?= $(or $(CARGO_TARGET_DIR),target)
 
-.PHONY: check fmt-check clippy test layering deny licenses install-test ci
+.PHONY: check fmt-check clippy test layering deny licenses install-test ci preflight
 check:
 	cargo check --workspace --all-targets -j $(JOBS)
 fmt-check:
@@ -60,6 +60,11 @@ deny:
 	fi
 
 ci: fmt-check clippy test layering docs-check licenses install-test deny
+
+# Run before every push: exactly what CI runs, on the tree being pushed (docs/RELEASING.md).
+# `make ci` is the quick inner loop; `make preflight` is the gate.
+preflight:
+	bash scripts/preflight.sh
 
 # --- release ----------------------------------------------------------------
 # One self-contained Linux binary per program. The musl target is required; this

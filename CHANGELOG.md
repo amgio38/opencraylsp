@@ -6,6 +6,22 @@ to follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `scripts/preflight.sh` (`make preflight`): runs, before any push, what CI runs, in CI
+  order, and refuses a tree with uncommitted files. `scripts/check-preflight-parity.sh`
+  (with its own test) fails in preflight and in CI when `ci.yml` runs a command that
+  preflight does not.
+- `scripts/release.sh`: the one way to cut a release. It runs preflight, pushes `main`,
+  waits for CI to finish green, and only then creates and pushes the tag and waits for
+  the release workflow. It refuses to reuse a tag. `docs/RELEASING.md` documents the flow,
+  including re-recording the golden MCP transcript after a version bump.
+
+### Changed
+
+- The release workflow now refuses a tag that differs from the crate version, or a
+  version with no `CHANGELOG.md` section, before building anything.
+
 ## [0.20260929.1] - 2026-10-01
 
 Release name: **V0.20260929.001**. From this version the project is numbered

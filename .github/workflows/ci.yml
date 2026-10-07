@@ -82,3 +82,10 @@ jobs:
 
       - name: generated tools doc check
         run: scripts/check-tools-doc.sh
+
+      # scripts/preflight.sh is what a contributor runs before pushing; it is only worth
+      # anything if it is the same list as this file. This fails when they drift.
+      - name: preflight matches CI
+        run: |
+          scripts/check-preflight-parity.sh
+          scripts/check-preflight-parity.test.sh
