@@ -11,6 +11,25 @@ reclaimed automatically.
 `lsp_*` tools, backed by `opencraylspd`, a shared daemon that starts language servers on
 demand and keeps them within memory and idle limits.
 
+## See it in action
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="docs/media/lsp-tools.gif" alt="opencraylsp MCP: lsp_outline lists a file's symbols with signatures, lsp_references finds every use, lsp_callers shows the call tree, lsp_diagnostics reports problems" width="400">
+    </td>
+    <td width="50%" valign="top">
+      <img src="docs/media/lsp-pool.gif" alt="opencraylspd status before and after three agents connect: clients goes from 1 to 4 while a single rust-analyzer instance serves them all" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td valign="top"><sub><b>Semantic answers, not grep</b> — <code>lsp_outline</code>, <code>lsp_references</code>, <code>lsp_callers</code> and <code>lsp_diagnostics</code>, answered by rust-analyzer over MCP: symbols with signatures, every use with <code>file:line:col</code>, the call tree, and the problems in the current version.</sub></td>
+    <td valign="top"><sub><b>One pool, shared</b> — three agents connect and <code>clients</code> goes from 1 to 4, while exactly one <code>rust-analyzer</code> instance serves them all instead of one per agent.</sub></td>
+  </tr>
+</table>
+
+> Both clips were recorded against a scratch workspace with the published binaries; no customer data or local paths are shown.
+
 ## Install in 30 seconds
 
 ```sh
