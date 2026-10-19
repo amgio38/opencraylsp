@@ -1,5 +1,5 @@
 #!/bin/sh
-# Documentation checks for the files in docs/, README.md and friends:
+# Documentation checks for the files in docs/, skills/, README.md and friends:
 #   1. every relative Markdown link points at a file that exists;
 #   2. no personal absolute path such as /root/ leaks into the docs;
 #   3. the docs are English (no CJK characters);
@@ -13,7 +13,7 @@ root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 cd "$root"
 
 files="README.md CONTRIBUTING.md CHANGELOG.md SECURITY.md"
-for extra in docs/*.md; do
+for extra in docs/*.md skills/*/*.md skills/*/references/*.md; do
 	[ -f "$extra" ] && files="$files $extra"
 done
 

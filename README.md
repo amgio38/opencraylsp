@@ -68,6 +68,17 @@ registers the server with Claude Code. For Cursor, opencode, other clients, syst
 language-server prerequisites, see [docs/INSTALL.md](docs/INSTALL.md) and
 [docs/CLIENTS.md](docs/CLIENTS.md).
 
+To teach the agent when and how to use the tools, install the bundled
+[Agent Skill](skills/opencraylsp/SKILL.md) as well. For Claude Code, copy the folder
+into your skills directory:
+
+```sh
+cp -r skills/opencraylsp ~/.claude/skills/        # for every project
+cp -r skills/opencraylsp .claude/skills/          # or for this project only
+```
+
+Other agents that read `SKILL.md` folders take the same directory as it is.
+
 `opencraylsp-mcp` starts connecting to `opencraylspd` in the background as soon as it runs, and
 starts the daemon itself when none is running, so the first tool call finds it
 ready. `initialize`, `ping` and `tools/list` answer without waiting for that
