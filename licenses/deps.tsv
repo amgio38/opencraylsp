@@ -85,7 +85,7 @@ thiserror	2.0.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 thiserror-impl	2.0.21	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 thread_local	1.1.10	MIT OR Apache-2.0	MIT	licenses/MIT.txt
 tinystr	0.8.4	Unicode-3.0	Unicode-3.0	licenses/Unicode-3.0.txt
-tokio	1.53.3	MIT	MIT	licenses/MIT.txt
+tokio	1.54.1	MIT	MIT	licenses/MIT.txt
 tokio-macros	2.7.2	MIT	MIT	licenses/MIT.txt
 tokio-util	0.7.20	MIT	MIT	licenses/MIT.txt
 toml	1.1.8+spec-1.1.0	MIT OR Apache-2.0	MIT	licenses/MIT.txt
