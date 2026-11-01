@@ -66,7 +66,7 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Install Rust with the musl target
-        uses: dtolnay/rust-toolchain@1.95.0
+        uses: dtolnay/rust-toolchain@1.120.0
         with:
           targets: ${{ matrix.target }}
 
@@ -113,7 +113,7 @@ jobs:
           cat "$ASSET.sha256"
 
       - name: Keep the archive for the publish job
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release-${{ matrix.target }}
           path: |
@@ -134,7 +134,7 @@ jobs:
       GH_REPO: ${{ github.repository }}
     steps:
       - name: Fetch both archives
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: release-*
           merge-multiple: true
